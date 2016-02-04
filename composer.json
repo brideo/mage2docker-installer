@@ -1,0 +1,19 @@
+{
+    "name": "brideo/magento2-installer",
+    "description": "A Magento 2 Installer Helper",
+    "require": {
+        "symfony/console": "^3.0",
+        "symfony/yaml": "^3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Brideo\\Installer\\Console\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Nathan McBride",
+            "email": "nathan@brideo.co.uk"
+        }
+    ]
+}
