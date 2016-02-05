@@ -1,0 +1,35 @@
+{
+  "chmod": "0755",
+  "compactors": [
+    "Herrera\\Box\\Compactor\\Json",
+    "Herrera\\Box\\Compactor\\Php"
+  ],
+  "compression": "GZ",
+  "directories": [
+    "src"
+  ],
+  "files": [
+    "vendor/autoload.php",
+    "vendor/herrera-io/phar-update/res/schema.json",
+    "LICENSE.md"
+  ],
+  "finder": [
+    {
+      "name": "*.php",
+      "in": [
+        "vendor/"
+      ]
+    }
+  ],
+  "finder-bin": [
+    {
+      "notName": "*.php",
+      "in": [
+        "vendor"
+      ]
+    }
+  ],
+  "main": "mage2docker-installer",
+  "output": "mage2docker-installer.phar",
+  "stub": true
+}
