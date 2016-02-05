@@ -38,4 +38,4 @@ Once the install has run you should be able to access your new Magento install a
 Sometimes I have had issues with docker images not booting properly, like I said this is still in BETA. If you're magento 2 install isn't running try the following:
  
     cd project-nam
-    docker up
+    docker up -d
