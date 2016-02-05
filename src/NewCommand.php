@@ -74,7 +74,7 @@ class NewCommand extends Command
      */
     protected function getDockerComposeFileContents(InputInterface $input)
     {
-        $dockerCompose = file_get_contents('src/templates/docker-compose.yml');
+        $dockerCompose = file_get_contents(__DIR__.'/templates/docker-compose.yml');
         $yaml = new Parser();
         $parsedYaml = $yaml->parse($dockerCompose);
 
@@ -116,7 +116,7 @@ class NewCommand extends Command
     {
         file_put_contents(
             $this->getDirectoryPath($input). '/.gitignore',
-            file_get_contents('src/templates/.gitignore')
+            file_get_contents(__DIR__.'/templates/gitignore')
         );
 
         return $this;
