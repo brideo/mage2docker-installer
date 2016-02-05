@@ -21,7 +21,7 @@ I am using MageInferno's setup with the [Meanbee Docker Nginx Proxy](https://git
 
 ##Installation
 
-    wget https://dl.dropboxusercontent.com/u/42656369/mage2docker-installer.phar
+    wget https://www.dropbox.com/s/kpsb3ai50rmc7oo/mage2docker-installer.phar
     chmod +x ./mage2docker-installer.phar
     sudo cp ./mage2docker-installer.phar /usr/local/bin/mage2docker-installer.phar
 
